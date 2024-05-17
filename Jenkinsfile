@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('hello') {
       steps {
-        bat 'CloudTask.bat'
+        sh 'CloudTask.sh'
       }
     }
   }
