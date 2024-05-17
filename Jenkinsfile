@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('hello') {
+    stage('Test') {
       steps {
-        sh ./CloudTask.sh
+      	sh "chmod +x -R ${env.WORKSPACE}"
+        sh './CloudTask.sh'
       }
     }
   }
